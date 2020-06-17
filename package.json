@@ -1,0 +1,29 @@
+{
+  "name": "site_bus",
+  "version": "1.0.0",
+  "description": "Site de viagens para estudantes",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx babel-node src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeoInCode/Site_bus.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pug": "^3.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/LeoInCode/Site_bus/issues"
+  },
+  "homepage": "https://github.com/LeoInCode/Site_bus#readme",
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/node": "^7.10.1",
+    "@babel/preset-env": "^7.10.2"
+  }
+}

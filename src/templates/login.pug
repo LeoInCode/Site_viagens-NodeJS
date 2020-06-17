@@ -1,0 +1,18 @@
+extends layout.pug
+
+block head
+    title Login
+block content
+    div.container.text-center.mx-auto.pt-5.pr-5.pl-5(cz-shortcut-listen="true")
+        form.form-signin
+            h1.h3.mb-3.font-weight-normal.mt-5.mb-4 Faça login
+            label.sr-only(for="inputUser") Usuário
+            input.form-control.col-md-4.offset-md-4(type="email", id="inputUser", placeholder='Usuario')
+            
+            label.sr-only(for="inputSenha") Senha
+            input.form-control.col-md-4.offset-md-4(type="oasswird", id="inputSenha", placeholder="Senha")
+
+            div.checkbox.mb-3
+                input(type="checkbox", value="remember-me", id="lembrar")
+                label.form-check-label.mt-2.ml-1(for="lembrar") Lembrar usuário
+            button.btn.btn-lg.btn-primary.btn-block.col-md-2.offset-md-5(type="submit") Login
