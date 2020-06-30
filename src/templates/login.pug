@@ -2,19 +2,44 @@ extends layout.pug
 
 block head
     title Login
-block content
-    div.container.text-center.mx-auto.pt-5.pr-5.pl-5(cz-shortcut-listen="true")
-        form.form-signin(action="/add" method="POST")
-            h1.h3.mb-3.font-weight-normal.mt-5.mb-4 Faça login
-            label.sr-only(for="inputUser") Usuário
-            input.form-control.col-md-4.offset-md-4(type="email", id="inputUser", placeholder='Usuario')
+block content      
+    div.container.collor-white.space
+        div.row
+            div.col-md-12.col-10.text-center.my-md-4.mb-4.mt-2.ml-4
+                h1.display-4 Cadastro
             
-            label.sr-only(for="inputSenha") Senha
-            input.form-control.col-md-4.offset-md-4(type="oasswird", id="inputSenha", placeholder="Senha")
+        div.row.justify-content-center.mb-5
+            div.col-sm-12.col-md-10.col-lg-8
+                form
+                    div.form-row
+                        div.form-group.col-sm-6
+                            label(for="inputNome") Nome:
+                            input.form-control(type="text", id="inputNome", placeholder="Digite seu nome")
+                        div.form-group.col-sm-6
+                            label(for="inputCurso") Curso:
+                            input.form-control(type="text", id="inputCurso", placeholder="Digite seu curso")
+                    div.form-row
+                        div.form-group.col-sm-6
+                            label(for="inputCpf") CPF:
+                            input.form-control(type="text", id="inputCpf", placeholder="Digite seu CPF")
+                        div.form-group.col-sm-6
+                            label(for="inputRg") RG:
+                            input.form-control(type="text", id="inputRg", placeholder="Digite seu RG")
+                    div.form-row
+                        div.form-group.col-sm-12
+                            label(for="inputEmail") Email:
+                            input.form-control(type="text", id="inputEmail", placeholder="Digite seu email")
+                    div.form-row
+                        div.form-group.col-sm-6
+                            label(for="inputSenha") Senha:
+                            input.form-control(type="text", id="inputSenha", placeholder="Digite sua senha")
 
-            div.checkbox.mb-3
-                input(type="checkbox", value="remember-me", id="lembrar")
-                label.form-check-label.mt-2.ml-1(for="lembrar") Lembrar usuário
-            button.btn.btn-lg.btn-primary.btn-block.col-md-2.offset-md-5(type="submit") Login
-
-    script(type="text/javascript" src="/database/insert.js")
+                    //div.form-row
+                        div.form-group.col-sm-12
+                            div.form-check
+                                label.form-check-label
+                                input.form-check-input(type="checkbox")
+                    div.form-row 
+                        div.col-sm-12
+                            button.btn.btn-primary(type="submit") Enviar       
+        
