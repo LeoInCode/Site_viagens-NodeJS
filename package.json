@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LeoInCode/Site_bus.git"
+    "url": "git+https://github.com/LeoInCode/Site_viagens-NodeJS.git"
   },
   "keywords": [],
   "author": "",
@@ -20,9 +20,9 @@
     "require": "^2.4.20"
   },
   "bugs": {
-    "url": "https://github.com/LeoInCode/Site_bus/issues"
+    "url": "https://github.com/LeoInCode/Site_viagens-NodeJS/issues"
   },
-  "homepage": "https://github.com/LeoInCode/Site_bus#readme",
+  "homepage": "https://github.com/LeoInCode/Site_viagens-NodeJS#readme",
   "devDependencies": {
     "@babel/core": "^7.10.2",
     "@babel/node": "^7.10.1",
