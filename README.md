@@ -7,5 +7,3 @@
 
 #### Descrição:
 Esse site de viagens foi feito como parte de um trabalho da faculdade. O objetivo era atender as necessidades dos alunos para administrar as viagens de cada curso.
-
-![Tela de Cadastro](https://imgur.com/hbdg4Gv "Tela de Cadastro")
