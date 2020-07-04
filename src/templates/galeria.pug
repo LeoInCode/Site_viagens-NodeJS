@@ -3,44 +3,63 @@ extends layout.pug
 block head
     title Galeria
 block content
-    div.container.collor-white.space
-        div.row.my-4
-            div.col-sm12.col-md-4.mb-4
-                div.card
-                    img.card-img-top(src="http://via.placeholder.com/286x180", alt="Imagem do Card")
-            div.col-sm12.col-md-4.mb-4
-                div.card
-                    img.card-img-top(src="http://via.placeholder.com/286x180", alt="Imagem do Card")
-            div.col-sm12.col-md-4.mb-4
-                div.card
-                    img.card-img-top(src="http://via.placeholder.com/286x180", alt="Imagem do Card")
-        div.row    
-            div.col-sm12.col-md-4.mb-4
-                div.card
-                    img.card-img-top(src="http://via.placeholder.com/286x180", alt="Imagem do Card")
-            div.col-sm12.col-md-4.mb-4
-                div.card
-                    img.card-img-top(src="http://via.placeholder.com/286x180", alt="Imagem do Card")
-            div.col-sm12.col-md-4.mb-4
-                div.card
-                    img.card-img-top(src="http://via.placeholder.com/286x180", alt="Imagem do Card")
-        div.row    
-            div.col-sm12.col-md-4.mb-4
-                div.card
-                    img.card-img-top(src="http://via.placeholder.com/286x180", alt="Imagem do Card")
-            div.col-sm12.col-md-4.mb-4
-                div.card
-                    img.card-img-top(src="http://via.placeholder.com/286x180", alt="Imagem do Card")
-            div.col-sm12.col-md-4.mb-4
-                div.card
-                    img.card-img-top(src="http://via.placeholder.com/286x180", alt="Imagem do Card")
-        div.row    
-            div.col-sm12.col-md-4.mb-4
-                div.card
-                    img.card-img-top(src="http://via.placeholder.com/286x180", alt="Imagem do Card")
-            div.col-sm12.col-md-4.mb-4
-                div.card
-                    img.card-img-top(src="http://via.placeholder.com/286x180", alt="Imagem do Card")
-            div.col-sm12.col-md-4.mb-4
-                div.card
-                    img.card-img-top(src="http://via.placeholder.com/286x180", alt="Imagem do Card")
+    div.jumbotron.jumbotron-fluid
+        div.container.collor-white.space
+            div.col-12.text-center
+                h1.display-4.mb-5.mt-4 Galeria
+            div.row.my-4
+                div.col-sm12.col-md-4.mb-4
+                    div.card
+                        img.card-img-top(src="http://via.placeholder.com/286x180", alt="Imagem do Card")
+                div.col-sm12.col-md-4.mb-4
+                    div.card
+                        img.card-img-top(src="http://via.placeholder.com/286x180", alt="Imagem do Card")
+                div.col-sm12.col-md-4.mb-4
+                    div.card
+                        img.card-img-top(src="http://via.placeholder.com/286x180", alt="Imagem do Card")
+            div.row    
+                div.col-sm12.col-md-4.mb-4
+                    div.card
+                        img.card-img-top(src="http://via.placeholder.com/286x180", alt="Imagem do Card")
+                div.col-sm12.col-md-4.mb-4
+                    div.card
+                        img.card-img-top(src="http://via.placeholder.com/286x180", alt="Imagem do Card")
+                div.col-sm12.col-md-4.mb-4
+                    div.card
+                        img.card-img-top(src="http://via.placeholder.com/286x180", alt="Imagem do Card")
+            div.row    
+                div.col-sm12.col-md-4.mb-4
+                    div.card
+                        img.card-img-top(src="http://via.placeholder.com/286x180", alt="Imagem do Card")
+                div.col-sm12.col-md-4.mb-4
+                    div.card
+                        img.card-img-top(src="http://via.placeholder.com/286x180", alt="Imagem do Card")
+                div.col-sm12.col-md-4.mb-4
+                    div.card
+                        img.card-img-top(src="http://via.placeholder.com/286x180", alt="Imagem do Card")
+            div.row    
+                div.col-sm12.col-md-4.mb-4
+                    div.card
+                        img.card-img-top(src="http://via.placeholder.com/286x180", alt="Imagem do Card")
+                div.col-sm12.col-md-4.mb-4
+                    div.card
+                        img.card-img-top(src="http://via.placeholder.com/286x180", alt="Imagem do Card")
+                div.col-sm12.col-md-4.mb-4
+                    div.card
+                        img.card-img-top(src="http://via.placeholder.com/286x180", alt="Imagem do Card")
+
+            // --- PAGINAÇÃO ---
+            div.row.justify-content-center.pb-3
+                nav(aria-label="...")
+                    ul.pagination
+                        li.page-item.disabled
+                            span.page-link Anterior
+                        li.page-item.active(aria-current="page")
+                            span.page-link 1
+                                span.sr-only(current)
+                        li.page-item
+                            a.page-link(href="#") 2
+                        li.page-item
+                            a.page-link(href="#") 3
+                        li.page-item
+                            a.page-link(href="#") Próxima

@@ -19,6 +19,9 @@ app.get('/', (req, res) => {
 app.get('/sobre', (req, res) => res.render('sobre'))
 app.get('/login', (req, res) => res.render('login'))
 app.get('/galeria', (req, res) => res.render('galeria'))
+app.get('/criar', (req, res) => res.render('criar'))
+app.get('/historico', (req, res) => res.render('historico'))
+
 
 app.get('/posts', (req, res) => res.render('posts', {
     posts

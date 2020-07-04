@@ -1,0 +1,36 @@
+extends layout.pug
+
+block head
+    title Criar Viagem
+block content
+    div.jumbotron.jumbotron-fluid
+        div.container.collor-white      
+            div.row.collor-white
+                div.col-12.text-center
+                    h1.display-4.mb-5.mt-5 Criar Viagem
+                
+            div.row.justify-content-center.mb-5.pb-5.collor-white
+                div.col-sm-12.col-md-10.col-lg-8
+                    form
+                        div.form-row
+                            div.form-group.col-sm-6
+                                label(for="inputTitulo") Título:
+                                input.form-control(type="text", id="inputTitulo", placeholder="Digite o título da viagem")
+                            div.form-group.col-sm-6
+                                label(for="inputCurso") Curso:
+                                input.form-control(type="text", id="inputCurso", placeholder="Digite o curso")
+                        div.form-row
+                            div.form-group.col-sm-6
+                                label(for="inputCidadef") Cidade:
+                                input.form-control(type="text", id="inputCidadef", placeholder="Digite a cidade do evento")
+                            div.form-group.col-sm-6
+                                label(for="inputLugares") Lugares:
+                                input.form-control(type="text", id="inputLugares", placeholder="Digite a quantidade de lugares")
+                        div.form-row
+                            div.form-group.col-sm-12
+                                label(for="inputPercurso") Percurso:
+                                input.form-control(type="text", id="inputPercurso", placeholder="Digite o percurso")
+                        div.form-row 
+                            div.col-sm-12
+                                button.btn.btn-primary(type="submit") Criar       
+            
