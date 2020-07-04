@@ -3,6 +3,7 @@
 - [NodeJS](http://https://nodejs.org/en/ "NodeJS")
 	- Pug
 	- Express
+	- Pg
 - [PostgreSQL](http://https://www.postgresql.org/ "PostgreSQL")
 
 #### Descrição:
